@@ -1,0 +1,6 @@
+* Plan
+#+BEGIN_SRC pseudocode
+FUNCTION inc(x)
+  RETURN x + 1
+END FUNCTION
+#+END_SRC

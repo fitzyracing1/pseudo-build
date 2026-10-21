@@ -1,0 +1,13 @@
+Homework 3 - notes for the reader. This paragraph is prose and should not be extracted.
+
+FUNCTION countDown(n)
+  SET out TO []
+  WHILE n > 0
+    APPEND n TO out
+    DECREMENT n
+  ENDWHILE
+  RETURN out
+END FUNCTION
+EXAMPLE countDown(3) -> [3, 2, 1]
+
+Thanks for reading.

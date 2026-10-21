@@ -30,5 +30,5 @@ test('mocked filing: create, dedupe on rerun, close when lit', async () => {
 test('board page lists dark items with counts and filters', async () => {
   const { out, results } = await setup(); const plan = planIssues(results, out);
   const f = buildBoard(plan.doc, path.join(out, 'board/index.html')); const h = fs.readFileSync(f, 'utf8');
-  for (const s of ['id="stage"', 'id="kind"', 'id="owner"', 'id="nl"', 'id="nd"', 'bob/notes', '"dark":2']) assert.ok(h.includes(s), s);
+  for (const s of ['id="stage"', 'id="kind"', 'id="source"', 'id="owner"', 'id="nl"', 'id="nd"', 'bob/notes', '"dark":2']) assert.ok(h.includes(s), s);
 });

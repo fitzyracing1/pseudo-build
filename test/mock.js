@@ -1,7 +1,7 @@
 'use strict';
 const fs = require('fs'), path = require('path');
 const F = p => fs.readFileSync(path.join(__dirname, 'fixtures', p), 'utf8');
-const FILES = { 'repos/alice/algos/contents/algos/fib.pseudo': F('fib.pseudo'), 'repos/bob/notes/contents/README.md': F('README.md'), 'repos/carol/shop/contents/.pseudo/src/cart.js.md': F('.pseudo/src/cart.js.md') };
+const FILES = { 'repos/alice/algos/contents/algos/fib.pseudo': F('fib.pseudo'), 'repos/bob/notes/contents/README.md': F('README.md'), 'repos/carol/shop/contents/.pseudo/src/cart.js.md': F('.pseudo/src/cart.js.md'), 'repos/dan/x/contents/src/app.js': F('kinds/app.js') };
 // Offline mock of the GitHub API with an in-memory issue tracker.
 function mockClient() {
   const calls = [], issues = []; let n = 0;
