@@ -1,0 +1,45 @@
+# pseudo-build: crawl every 6h, file issues in THIS repo only, publish the board to Pages.
+# Place at .github/workflows/crawl.yml in fitzyracing1/pseudo-build.
+name: pseudo-build crawl
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write        # issues in this repository only (GITHUB_TOKEN cannot write elsewhere)
+  pages: write
+  id-token: write
+concurrency:
+  group: pseudo-build
+  cancel-in-progress: false
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Code search needs a user token; add a read-only fine-grained PAT as CRAWL_TOKEN (public repos, no write scopes).
+      CRAWL_TOKEN: ${{ secrets.CRAWL_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm test
+      - name: Crawl (read-only; skipped until CRAWL_TOKEN is set)
+        if: env.CRAWL_TOKEN != ''
+        run: GH_TOKEN="${CRAWL_TOKEN:-$GH_TOKEN}" node bin/pseudo-build.js crawl --limit 20
+      - name: File / update / close issues in this repo
+        if: env.CRAWL_TOKEN != ''
+        run: node bin/pseudo-build.js issues --file --repo "$GITHUB_REPOSITORY"
+      - run: node bin/pseudo-build.js board
+      - name: Assemble site
+        run: mkdir -p _site/board _site/out && cp board/index.html _site/board/ && cp -r out/issues out/issues.json out/results.json _site/out/ && echo '<meta http-equiv="refresh" content="0;url=board/">' > _site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+  deploy:
+    needs: crawl
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: '${{ steps.d.outputs.page_url }}' }
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4

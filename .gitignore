@@ -1,0 +1,4 @@
+node_modules/
+# fetched third-party sources/generated code stay local; summaries are committed
+out/*/
+!out/issues/

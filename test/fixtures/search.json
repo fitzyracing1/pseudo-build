@@ -1,0 +1,6 @@
+{ "total_count": 3, "items": [
+  { "path": "algos/fib.pseudo", "sha": "a1", "url": "x", "html_url": "https://github.com/alice/algos/blob/main/algos/fib.pseudo", "repository": { "name": "algos", "owner": { "login": "alice" }, "private": false } },
+  { "path": "README.md", "sha": "b2", "url": "x", "html_url": "https://github.com/bob/notes/blob/main/README.md", "repository": { "name": "notes", "owner": { "login": "bob" }, "private": false } },
+  { "path": ".pseudo/src/cart.js.md", "sha": "c3", "url": "x", "html_url": "https://github.com/carol/shop/blob/main/.pseudo/src/cart.js.md", "repository": { "name": "shop", "owner": { "login": "carol" }, "private": false } },
+  { "path": "src/app.js", "sha": "d4", "url": "x", "html_url": "https://github.com/dan/x/blob/main/src/app.js", "repository": { "name": "x", "owner": { "login": "dan" }, "private": false } }
+] }

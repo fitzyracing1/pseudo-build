@@ -1,0 +1,16 @@
+// Fibonacci, iterative
+FUNCTION fib(n)
+  IF n < 2 THEN
+    RETURN n
+  END IF
+  SET a TO 0
+  SET b TO 1
+  FOR i FROM 2 TO n
+    SET t TO a + b
+    a = b
+    b = t
+  END FOR
+  RETURN b
+END FUNCTION
+ASSERT fib(10) == 55
+ASSERT fib(1) == 1
