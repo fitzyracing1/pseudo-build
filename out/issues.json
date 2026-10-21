@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T19:49:14.352Z",
+  "generatedAt": "2026-10-21T19:57:18.765Z",
   "counts": {
     "lit": 6,
     "dark": 14
@@ -23,7 +23,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"map:\"",
       "hash": "5b4f0f2c1bacaa4b",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/1"
     },
     {
       "key": "de2a1bb2bfffb161f2f6",
@@ -43,7 +43,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"MacLisp Cross Assembler Documentation. KLOTZ.\"",
       "hash": "b26050842ed8cf3d",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/2"
     },
     {
       "key": "7595e4688f6024317654",
@@ -63,7 +63,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"WinChomp():\"",
       "hash": "4092a3717aa317de",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/3"
     },
     {
       "key": "021f5e6c0bc2821984ec",
@@ -83,7 +83,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"* is language strong typed?\"",
       "hash": "428285649b1a879c",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/4"
     },
     {
       "key": "13def102eb23d6ec488e",
@@ -103,7 +103,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"CpvDeclare(int,msgSize);\"",
       "hash": "13572f8264b92683",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/5"
     },
     {
       "key": "d8d72fa9d377816076a3",
@@ -123,7 +123,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"03-Jun-2002\"",
       "hash": "f9708fecc35616dc",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/6"
     },
     {
       "key": "e4f72c1e4149b201b8ec",
@@ -143,7 +143,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"START_SETUP_LOG at user_desktop/course_ide_setup_log\"",
       "hash": "3d355dbdee354624",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/7"
     },
     {
       "key": "8363d1ce749f199e4e2c",
@@ -163,7 +163,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"START hilow_game\"",
       "hash": "43693463b08dfa80",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/8"
     },
     {
       "key": "384b85643b279e7d2ef8",
@@ -183,7 +183,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"const SERVER_URL       = \"{{ server_url }}\"         # default: \"localhost:8080\"\"",
       "hash": "748471d9bb5334db",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/9"
     },
     {
       "key": "8aff9abea3920a2f993f",
@@ -203,7 +203,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"START paycheck_calculator\"",
       "hash": "c673ce9003bc2948",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/10"
     },
     {
       "key": "2cd7511b661813a20c9c",
@@ -223,7 +223,7 @@
       "kind": "pseudo-file",
       "error": "TypeError: Cannot read properties of undefined (reading 'length')",
       "hash": "af339384b93ac031",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/11"
     },
     {
       "key": "326eae1787e1c90a25ca",
@@ -243,7 +243,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"OPENFILE Src FOR READ\"",
       "hash": "21b22cb45a1b0b4a",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/12"
     },
     {
       "key": "b7b64dc10ea8c19ac312",
@@ -263,7 +263,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"while() {\"",
       "hash": "cf6b724df7f26fa5",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/13"
     },
     {
       "key": "988caf5d0b616364e8ba",
@@ -283,7 +283,7 @@
       "kind": "pseudo-file",
       "error": "Unrecognized pseudocode statement: \"foreach(job in listOfDelayedJobs) {\"",
       "hash": "11f7788405a302b4",
-      "issueUrl": null
+      "issueUrl": "https://github.com/fitzyracing1/pseudo-build/issues/14"
     }
   ],
   "lit": [
